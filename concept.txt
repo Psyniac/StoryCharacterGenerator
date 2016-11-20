@@ -1,6 +1,6 @@
 concept
 
-I 	4 Zeitspannen des Charakters die mit Textabschnitte beschrieben werden
+I 	4 Zeitspannen des Charakters die mit Textabschnitten beschrieben und nacheinander geöffnet werden
 II 	Jeder Abschnitt hat tags, die an placeholder für z.B. Waffen, Orte, Personen ausgewählt werden
-III	tags von vorherigen Textabschnitten werden aufgegriffen und in die nächsten anhand der placeholder implementiert z.B. Schwert der Mutter, Bogen des Bruders, Hütte des Onkels
-
+III Bei der Initialisierung des tags wird der entsprechende placeholder gespeichert
+IV	tags von vorherigen Textabschnitten werden aufgegriffen und in die nächsten implementiert z.B. Schwert der Mutter, Bogen des Bruders, Hütte des Onkels
