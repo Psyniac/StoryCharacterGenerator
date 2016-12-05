@@ -4,6 +4,7 @@
 // #show Melee# Beispiel: String in placeholder Melee wird ausgegeben
 // Kategorien: 0=relative, 1=
 
+var clickable = 1; // 1 = clickable, 0 not clickable
 var current_q = 0;
 var chosen_o = 0;
 
@@ -83,18 +84,18 @@ var options_2 = [
 ];
 
 var options_3 = [
-    "option 1 A #get/name=Axt/cat=Melee# ",
-    "option 1 B",
-    "option 1 C",
-	"option 1 D",
+    "option 3 A #get/name=Axt/cat=Melee# ",
+    "option 3 B",
+    "option 3 C",
+	"option 3 D",
 	""
 ];
 
 var options_4 = [
-    "option 2 A",
-    "option 2 B",
-    "option 2 C",
-	"option 2 D",
+    "option 4 A",
+    "option 4 B",
+    "option 4 C",
+	"option 4 D",
 	""
 ];
 

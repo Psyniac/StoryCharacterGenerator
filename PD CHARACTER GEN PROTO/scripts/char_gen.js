@@ -1,9 +1,18 @@
 
+var doc = new jsPDF();
+var specialElementHandlers = {
+    '#editor': function (element, renderer) {
+        return true;
+    }
+};
+doc.setFontSize(20);	
+
 $( document ).ready(function() {
     //$("div.container").html("TEST");
 	
+
 	
-	$("div.output").html( checkPlaceholdersShow("") );
+	$("div.output_txt").html( checkPlaceholdersShow("") );
 	$("div.option_1").html( checkPlaceholdersOption(options_1[current_q], 1) );
 	$("div.option_2").html( checkPlaceholdersOption(options_2[current_q], 2) );
 	$("div.option_3").html( checkPlaceholdersOption(options_3[current_q], 3) );
@@ -11,22 +20,36 @@ $( document ).ready(function() {
 	
 	
 $( "#options_1" ).click(function() {
-	clickButton(1);
+	if(clickable == 1){
+		clickable = 0;
+	clickButton(1);}
 });
 	
 $( "#options_2" ).click(function() {
-	clickButton(2);
+	if(clickable == 1){
+		clickable = 0;
+	clickButton(2);}
 });	
 	
 $( "#options_3" ).click(function() {
-	clickButton(3);
+	if(clickable == 1){
+		clickable = 0;
+	clickButton(3);}
 });	
 
 $( "#options_4" ).click(function() {
-	clickButton(4);
+	if(clickable == 1){
+		clickable = 0;
+	clickButton(4);}
 });	
-	
-	
+
+$("#saveButton").click(function () {
+    doc.fromHTML($("#output_txt_id").html(), 15, 15, {
+        'width': 170,
+            'elementHandlers': specialElementHandlers
+    });
+    doc.save('sample-file.pdf');
+});	
 	
 });
 
@@ -145,47 +168,45 @@ function checkPHArray(arr){
 }
 
 
+
 function clickButton(number) {
+	$( ".output_fade" ).fadeOut(200);
+   $( "div.buttons_holder" ).fadeOut( "slow" , function() {
+    // Animation complete.
 	
+	$("#output_img_id").attr("src","img/img_q"+ current_q +"_o" + number + ".jpg");
+	$( ".output_fade" ).fadeIn(200);
+		
 	options_chosen[current_q] = number;
 	chosen_o = number;
-	
 	if(number==1){
-		
 		checkPHArray(placeholders_o_1);
 		generated_text[current_q] = " " + checkPlaceholdersShow(options_1[current_q]) + " " + checkPlaceholdersShow(output_o_1[current_q]);
-		
 	}
-	
-	
 	if(number==2){
-		
 		checkPHArray(placeholders_o_2);
 		generated_text[current_q] = " " + checkPlaceholdersShow(options_2[current_q]) + " " + checkPlaceholdersShow(output_o_2[current_q]);
-		
 	}
-	
 	if(number==3){
-		
 		checkPHArray(placeholders_o_3);
 		generated_text[current_q] = " " + checkPlaceholdersShow(options_3[current_q]) + " " + checkPlaceholdersShow(output_o_3[current_q]);
-		
 	}
-	
 	if(number==4){
-		
 		checkPHArray(placeholders_o_4);
 		generated_text[current_q] = " " + checkPlaceholdersShow(options_4[current_q]) + " " + checkPlaceholdersShow(output_o_4[current_q]);
-		
-	}
-	
-	
-	
+	}	
 	next();
+	
+	
+	 
+  }).fadeIn( 400 , function() { clickable = 1; });
+	
 }
 
+
+
 function generate_story(){
-	return generated_text.join("");
+	return generated_text.join(""); // "<br><br><br><div id='saveButton' class='saveButton'>Charakter speichern!</div><br><div id='newButton' class='newButton'>Neue Story generieren!</div><br>"
 }
 
 function next(){
@@ -194,22 +215,22 @@ function next(){
 				
 	
 	if(chosen_o == 1){
-		$("div.output").html( checkPlaceholdersShow(output_o_1[current_q]) );
+		$("div.output_txt").html( checkPlaceholdersShow(output_o_1[current_q]) );
 		
 	}
 	
 	if(chosen_o == 2){
-		$("div.output").html( checkPlaceholdersShow(output_o_2[current_q]) );
+		$("div.output_txt").html( checkPlaceholdersShow(output_o_2[current_q]) );
 		
 	}
 	
 	if(chosen_o == 3){
-		$("div.output").html( checkPlaceholdersShow(output_o_3[current_q]) );
+		$("div.output_txt").html( checkPlaceholdersShow(output_o_3[current_q]) );
 		
 	}
 	
 	if(chosen_o == 4){
-		$("div.output").html( checkPlaceholdersShow(output_o_4[current_q]) );
+		$("div.output_txt").html( checkPlaceholdersShow(output_o_4[current_q]) );
 		
 	}
 	
@@ -231,6 +252,6 @@ function next(){
 	$("div.option_1").html( "" );
 	$("div.option_2").html( "" );
 	$("div.buttons_holder").html( "" );
-	$("div.output").html( generate_story() );
+	$("div.output_txt").html( generate_story() );
 	}
 }
