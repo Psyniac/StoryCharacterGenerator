@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body{
+	background: #888;
+	background: url(img/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	padding: 10px;
+	margin:auto;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.inner_container{
+	
+	width: 100%;
+	display: inline-block;
+	background: rgba(255,255,255,0.9);
+	min-height: 500px;
+	height: auto;
+	padding: 40px;
+	margin:auto;
+	border: 0px solid #333;
+-webkit-box-shadow: 0px 0px 300px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 0px 300px 0px rgba(0,0,0,0.25);
+box-shadow: 0px 0px 300px 0px rgba(0,0,0,0.25);
+
+
+}
+
+.right_container{
+	width: 20%;
+	min-height: 500px;
+	height: auto;
+	display: inline-block;
+	float:right;
+	background: #000;
+}
+
+.option{
+	padding: 3%;
+	display: block;
+	background: rgba(255,255,255,0.9);
+	color: #000;
+	width: 90%;
+	height: auto;
+	margin: 1%;
+	cursor: pointer; cursor: hand;
+	text-align: left;
+	border: 3px solid #AAA;
+	display: inline-block;
+}
+
+.option:hover{
+	border: 3px solid #333;
+}
+
+.output{
+	height:auto;
+	display: inline-block;
+	padding: 20px;
+	border: 3px solid #AAA;
+	width: 90%;
+}
+
+.output_txt, .output_img_div{
+	display: inline-block;
+}
+
+.output_txt{
+	float:right;
+	text-align: left;
+	width: 70%;
+}
+
+.output_img_div{
+	float:left;
+	text-align: left;
+	width: 28%;
+	display: inline-block;
+	height: auto;
+}
+
+.output_img{
+	display: inline-block;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	
+}
+
+
+
+.html, html, body, .header{
+	padding: 0px;
+	width: 100%;
+	margin: 0px;
+	top: 0px;
+}
+
+.header{
+	background: #FFF;
+	width: 100%;
+	min-height: 60px;
+	margin-top: -20px;
+	padding-top: 10px;
+	margin-bottom: 50px;
+	-webkit-box-shadow: 0px 0px 47px 0px rgba(0,0,0,0.48);
+-moz-box-shadow: 0px 0px 47px 0px rgba(0,0,0,0.48);
+box-shadow: 0px 0px 47px 0px rgba(0,0,0,0.48);
+}
+
+
+#pdf_output{
+	border:0px solid #FFF;
+}
