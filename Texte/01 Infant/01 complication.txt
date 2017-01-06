@@ -1,0 +1,20 @@
+INIT
+1.	Your story begins quite troublesome. There were numerous complications during your birth. It almost cost your mother’s life. She was only able to survive due to the midwives’ experience.
+
+OPTIONS
+1.	Celebrating the successful birth your father arranged a hunt, during which a white deer was killed. Its #get_hide_object# was passed to you.
+
+2.	Enduring the harsh circumstances of your birth was beheld as a sign of your volition. Thus, the elders gave your family a #get_talisman_object#.
+
+3.	It was already late at night when you were born. According to your peoples’ tradition you were given a #get_bangle_object# and need to wear it on your left arm.
+
+4.	A crow was sacrificed to pray for your health. Your sister knotted its feathers into a #get_necklace_object#.
+
+OUTCOME
+a.	 In time the #show_object# became your personal symbol.
+
+b.	 During your whole life, the #show_object# turned out to be a good-luck charm. 
+
+c.	 Even to this day this #show_object# represents your origin.
+
+d.	 All your life the #show_object# was a reminder of your fortune.

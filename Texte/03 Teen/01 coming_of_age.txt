@@ -1,0 +1,20 @@
+INIT
+1.	After your 15th birthday a coming of age ceremony was held. Its main purpose was obviously to feast, but it also functioned as a contest with same-aged teens. First you contemplated over your most precious belongings including your #show_object#. Afterwards you displayed the skills you acquired during childhood, culminating in the ease of handling your #show_weapon#.
+
+OPTIONS
+1.	Among the other children, a girl impressed you with her extraordinary deftness. Challenging her revealed that you were equally strong. After taking a few blows with your #show_weapon# she immediately returned them with hers. You were both #get_thrilled_mood# to have found an equal rival.
+
+2.	During the following matches an older boy demanded your #show_object# as a bet for your duel. Nevertheless, you accepted as he didn’t seem to be experienced in fights. You can still remember how #get_happy_mood# you were when you won.
+
+3.	It is common that some participants end up injured while fighting, but you still feel #get_devestated_mood# form the horror of the tragedy that occurred that day. 
+
+4.	Resulting in a lot of attention from other families, because your level of skill was hardly seen. Feeling #get_triumphal_mood# you even dared to challenge full grown warriors, who were merciful enough to evaluate your strength without putting you in your place.
+
+OUTCOME
+a.	 Years later you can still recall that #show_mood# feeling simply by thinking of her gaze. Sharing the same passion for #show_weapon#s in fights you both realized you’re more than rivals.
+
+b.	 Many duels followed since that day and you’re still just as #show_mood# every time.
+
+c.	 You lost your best friend that cursed day. Someone stole your family’s #show_object# and chasing the thief he got hit by an arrow on the display grounds.
+
+d.	 It wasn’t the last day you were meant to be #show_mood#. In war as well as in life, being fated for glory.

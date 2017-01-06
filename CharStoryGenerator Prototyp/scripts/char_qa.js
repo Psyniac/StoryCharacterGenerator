@@ -1,84 +1,118 @@
 //DATA BASE
 
 var placeholders_categories = [
-    "Nahkampf",
-    "Fernkampf",
-    "Sinnlos",
-    "Sinnvoll",
-	"Gut",
-	"Schlecht"
+    "object",
+    "weapon",
+    "mood",
+    "place"
 ];
 
 var init_texts = [
-"Selbst ein Aufruf des Königs konnte meinen Vater nicht davon abhalten meiner Mutter am Tag meiner Geburt die Hand zu halten. Zumindest dachte er das. Als jedoch der Hauptmann der Wache über die Schwelle des Tempels trat, muss sein Rückgrat wohl in sich zusammen geschrumpft sein, denn letzten Endes ist er ihm gefolgt.",
-"<br><br><br>Während deiner Kindheit hast du die meiste Zeit damit verbracht im Wald zu spielen. Eines Tages hast du dich mit einem Freund verlaufen! Als ihr überlegt wie ihr zurück nach Hause kommt ist etwas bedeutendes geschehen.",
-"Default",
-"Default",
-""
+	"Your story begins quite troublesome. There were numerous complications during your birth. It almost cost your mother’s life. She was only able to survive due to the midwives’ experience.",
+	
+	"<br><br>Around your ninth birthday a friend and you were playing in the forest. Neither of you paid attention on where you were going, thus you ended up lost. \ Having only a few necessities and your #show_object# with you, you had to find a way back home!",
+	
+	"<br><br>After your 15th birthday a coming of age ceremony was held. Its main purpose was obviously to feast, but it also functioned as a contest with same-aged teens. \ First you contemplated over your most precious belongings including your #show_object#. Afterwards you displayed the skills you acquired during childhood, culminating in your #show_weapon#s handling.",
+	
+	"<br><br>At the pinnacle of your life you once again looked back. Feeling #show_mood# considering your achievements, still with your iconic #show_weapon# and #show_object#.\ Seeking out new adventures you decide to travel.",
+	
+	""
 ];
 
 var options_1 = [
-    "Doch er ist niemals dort angekommen, weil er bei der ersten Chance geflohen ist.",
-    "Du siehst in der Entfernung etwas aufblitzen und erkennst, dass es eine #get_Axt_Nahkampf# ist. Holzfäller müssen sie hier verloren haben! Nach kurzem umsehen findet dein Freund den Pfad der Holzfäller und du weißt wieder in welche Richtung ihr müsst.",
-	"Default",
-	"Default",
+    "Celebrating the successful birth your father arranged a hunt, during which a white deer was killed. Its #get_hide_object# was passed to you.",
+	
+    "Looking for a way back you found an #get_axe_weapon#. Lumberjacks probably lost it on their way to camp. It didn’t take long for you to find their trail.",
+	
+	"Among the other children, a girl impressed you with her extraordinary deftness. Challenging her revealed that you were equally strong. \ After taking a few blows off your #show_weapon# she immediately returned them with hers. You were both #get_thrilled_mood# to have found an equal rival.",
+	
+	"Rumors of great treasure in the #get_desert_place# encourage your wish.",
+	
 	""
 ];
 
 var options_2 = [
-	"Auf dem Weg zum König gab er jedem Bettler eine Münze, wie es üblich ist am Geburtstag.",
-    "Auch wenn der Wald dicht bewachsen ist, kannst du einen großen Berg erkennen und erinnerst dich waage, dass an dessen Fuß eine Mienenstadt liegt.",
-	"Default",
-    "Default",
+	"Enduring the harsh circumstances of your birth was beheld as a sign of your volition. Thus, the elders gave your family a #get_talisman_object#.",
+	
+    "Even though the forest is densely grown you were able to spot a mountain in the distance. \ Remembering the location of a mining city at its root you were able to orient yourself. On the way back home you found an #get_old spear_weapon#.",
+	
+	"During the following matches an older boy demanded your #show_object# as a bet for your duel. Nevertheless, you accepted as he didn’t seem to be experienced in fights.\ You can still remember how #get_happy_mood# you were when you won.",
+	
+    "Actually, you reconsider and rather stay near your #get_hometown_place#.",
+	
 	""
 ];
 
 var options_3 = [
-    "Er hastete so schnell wie möglich zum König.",
-    "Ihr werdet von einem Gewitter überrascht und sucht schnell Zuflucht.",
-    "Default",
-	"Default",
+    "It was already late at night when you were born. According to your peoples’ tradition you were given a #get_bangle_object# and need to wear it on your left arm.",
+	
+    "While thinking of a way back you got surprised by a storm. Taking shelter under a nearby giant’s grave you found a fascinating #get_silver dagger_weapon# adorned with gemstones.",
+	
+    "It is common that some participants end up injured while fighting, but you still feel #get_devestated_mood# form the horror of the tragedy that occurred that day.",
+	
+	"After your coming of age you already traveled far and wide. Never quenching the thirst for wanderlust, you head out to the #get_mountain_place#s hoping to meet destiny’s calling.",
+	
 	""
 ];
 
 var options_4 = [
-    "Seine Sorge um Mutter war doch zu groß und ließ den König warten bis er sie in Sicherheit wusste.",
-    "Keiner von euch ist sich sicher in welche Richtung ihr am besten gehen solltet. Ihr seid kaum einen halben Tag unterwegs und deshalb voller Energie, also statt groß zu grübeln fängst du an mit deinem Freund zu toben.",
-    "Default",
-	"Default",
+    "A crow was sacrificed to pray for your health. Your sister knotted its feathers into a #get_necklace_object#.",
+	
+    "Not sure which way to go you simply start to romp around with your friend, causing the local hunters to find you. \ Because of the noise you made all bigger wildlife is gone for the day. All that’s left to hunt was smaller prey with which you and your friend helped. Returning home, you got to keep a #get_small bow_weapon#.",
+	
+    "Resulting in a lot of attention from other families, because your level of skill was hardly seen. Feeling #get_triumphal_mood# you even dared to challenge full grown warriors, \	who were merciful enough to evaluate your strength without putting you in your place.",
+	
+	"With a new start in mind you move to the closest harbor and head out to #get_sea_place#.",
+	
 	""
 ];
 
 var output_o_1 = [
-    "Auch wenn ich die Intrigen des Adels und die Härte des Gesetzes selbst erlebt habe. Nichts entschuldigt diese Feigheit.",
-    "Ihr kommt kurz danach bei einer Holzfällerhütte an. Einer der Holzfäller erkennt dich und bietet an dich am Abend, wenn er mit seiner Arbeit fertig ist, wieder nach Hause zu bringen. Bis dahin helft ihr auch bei der Arbeit. So hast du dein Talent für den Umgang mit der #show_Nahkampf# entdeckt.",
-    "Default",
-    "Default",
+    "In time the #show_object# became your personal symbol.",
+	
+    "Arriving at the lumberjacks’ camp one of them recognized you by your #show_object# and offered to bring you back home at the day’s end.\ Until then you helped as much as you could and got to keep the #show_weapon# for that.",
+	
+    "Years later you can still recall that #show_mood# feeling simply by thinking of her gaze. Sharing the same passion for #show_weapon#s in fights you both realized you're more than rivals.",
+	
+    "What’s yet to come in the #show_place# remains a mystery.",
+	
 	""
 ];
 
 var output_o_2 = [
-	"Nicht viele halten sich noch an die alten Traditionen und obwohl die meisten obsolet sind, hat mein Vater an diesem Tag viele Freunde gewonnen. Allerdings nur in gewissen Kreisen erwähnbare.",
-    "Je näher ihr dem Berg kommt desto schwieriger wird es noch vorwärz zu kommen. Steigung und Dickicht machen es letzten Endes unmöglich noch weiter zu kommen, doch dann siehst du einen Trampelpfad. Anchdem ihr endlich aus dem Dickicht schlagt siehst du zwar nicht die Stadt, doch steht ihr vor einer ausgebauten Straße. Ein Händler nimmt euch mit und an der nächsten Kreuzung findest du wieder den Weg nach Hause.",
-    "Default",
-	"Default",
+	"During your whole life, the #show_object# turned out to be a good-luck charm.",
+	
+    "Thrashing around with the #show_weapon# got you through the thicket quite easily, albeit exhausted.",
+	
+    "Many duels followed since that day and you’re still just as #show_mood# every time.",
+	
+	"What’s yet to come at your #show_place# remains a mystery.",
+	
 	""
 ];
 
 
 var output_o_3 = [
-    "Ein böses Omen hat alle Berater des Königs in Aufruhr versetzt und um sie zu beschwichtigen ließ er alle Geburten segnen.",
-    "An einer großen Eiche findet ihr ein Hühnengrab unter dem ihr euch vor dem Sturm versteckt. Blitz und Donner schlagen so schenell und laut, dass dir die Brust bebt. Als du dich mit deinem Mantel dichter an die Eiche schmiegst, kommt es wie es kommen musste. Ein Blitz schlägt in die riesge Eiche! Doch das ist nicht das Ende deiner Geschichte ... der Blitz wird von dem Stein des Hühnengrabes absorbiert. Silluetten und Runen läuchten grünlich auf und aus dem Deckstein fällt die ein Amulett in den Schoß. Du drehst dich zu deinem Freund und siehst, dass er ohnmächtig ist und du selbst fühlst auch dein Bewusstsein schwinden. Am nächsten Morgen findet euch ein Druide und bringt dich nach Hause.",
-    "Default",
-	"Default",
+    "Even to this day this #show_object# represents your origin.",
+	
+    "Fearing your parents would simply sell it you kept it hidden. To this day, you still treasure the #show_weapon# and your #show_object#.",
+	
+    "You lost your best friend that cursed day. Someone stole your family’s #show_object# and chasing the thief he got hit by an arrow on the display grounds.",
+	
+	"What’s yet to come beyond the #show_place#s remains a mystery.",
+	
 	""
 ];
 
 var output_o_4 = [
-    "Zu Vaters Glück war der König ein besonnener Mann und gewährte ihm Entschuldigung. Trotzdem hat es sein Ansehen geschwächt, was es bei den Feinden des Königs folglich stärkte.",
-    "Dabei macht ihr so viel Lärm, dass euch ein der lokalen Jäger findet.",
-    "Default",
-	"Default",
+    "All your life the #show_object# was a reminder of your fortune.",
+	
+    "Since that day, you trained your skill with the #show_weapon#.",
+	
+    "It wasn’t the last day you were meant to be #show_mood#. In war as well as in life, being fated for glory.",
+	
+	"What’s yet to come remains a mystery.",
+	
 	""
 ];
 

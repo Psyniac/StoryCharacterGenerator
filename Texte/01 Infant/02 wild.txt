@@ -1,0 +1,20 @@
+INIT
+2.	Let’s skip the bloody mess and begin your story during babyhood, which actually isn’t much of an improvement. For you were a loud and wild storm. Even when cared for with utmost caution, you found an easy step on harm’s way.
+
+OPTIONS
+1.	One day you ended up hurting your leg. It wasn’t anything serious. Only the #get_ribbon_object# your sister used to treat the wound is a constant reminder of your foolishness. 
+
+2.	Looking back, it was to your advantage because it hardened you. Although seeking trouble might have been too much, it was a good opportunity to practice with your #get_slingshot_object# though.
+
+3.	When you were five years old your shenanigans got too far. You fell into an old well. After several failed attempts to climb out you finally turned your energy inwards. Calming down you found a #get_purple gem_object# between the pebbles on the ground.
+
+4.	Unsurprisingly your family got you to work early on to exhaust your excess energy. In the fields your favorite job was to dig the trenches, especially after you once found an #get_old ring_object#.
+
+OUTCOME
+a.	 You cling to the #show_object# till this day. Despite the lingering ridicule it implies.
+
+b.	 Even years later many people hold a grudge against you for causing mischief with your #show_object#.
+
+c.	 Miraculously you weren’t hurt but being trapped for hours was a humbling experience. You still carry the #show_object# to this day.
+
+d.	 Day after day the #show_object# kindled your passion for discovery.

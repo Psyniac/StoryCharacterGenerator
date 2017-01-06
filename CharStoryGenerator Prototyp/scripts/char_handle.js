@@ -49,12 +49,8 @@ var placeholders_chosen = [
     "",
     "",
     "",
-	"",
 	""
 ];
-
-
-
 
 var options_chosen = [
     0,
@@ -68,7 +64,7 @@ var generated_text = [
     "",
     "",
     "",
-	"",
+    "",
 	""
 ];
 

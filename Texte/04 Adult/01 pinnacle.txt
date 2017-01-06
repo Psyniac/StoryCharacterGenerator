@@ -1,0 +1,20 @@
+INIT
+1.	At the pinnacle of your life you once again looked back. Feeling #show_mood# considering your achievements, still with your iconic #show_weapon# and #show_object#. Seeking out new adventures you decide to travel.
+
+OPTIONS
+1.	Rumors of great treasure in the #get_desert_place# encourage your wish.
+
+2.	Actually, you reconsider and rather stay near your #get_hometown_place#.
+
+3.	After your coming of age you already traveled far and wide. Never quenching the thirst for wanderlust, you head out to the #get_mountain_place#s hoping to meet destiny’s calling.
+
+4.	With a new start in mind you get to the closest harbor and head out to #get_sea_place#.
+
+OUTCOME
+a.	What’s yet to come in the #show_place# still needs to be seen.
+
+b.	What’s yet to come at your #show_place# still needs to be seen.
+
+c.	What’s yet to come beyond the #show_place#s still needs to be seen.
+
+d.	What’s yet to come still needs to be seen.

@@ -1,0 +1,20 @@
+INIT
+1.	Around your ninth birthday a friend and you were playing in the forest. Neither of you paid attention on where you were going, thus you ended up lost. Having only a few necessities and your #show_object# with you, you had to find a way back home.
+
+OPTIONS
+1.	Looking for a way back you found an #get_axe_weapon#. Lumberjacks probably lost it on their way to camp. It didn’t take long for you to find their trail.
+
+2.	Even though the forest is densely vegetated you were able to spot a mountain in the distance. Remembering the location of a mining city at its root you were able to orient yourself. On the way back home you found an #get_old spear_weapon#.
+
+3.	While thinking of a way back you got surprised by a storm. Taking shelter under a nearby giant’s grave you found a fascinating #get_silver dagger_weapon# adorned with gemstones.
+
+4.	Not sure which way to go you simply start to romp around with your friend, causing the local hunters to find you. Because of the noise you made all bigger wildlife is gone for the day. All that’s left to hunt was smaller prey with which you and your friend helped. Returning home, you got to keep a #get_small bow_weapon#.
+
+OUTCOME
+a.	 Arriving at the lumberjacks’ camp one of them recognized you by your #show_object# and offered to bring you back home at the day’s end. Until then you helped as much as you could and got to keep the #show_weapon# for that.
+
+b.	 Thrashing around with the #show_weapon# got you through the thicket quite easily, albeit exhausted. 
+
+c.	 Fearing your parents would simply sell it you kept it hidden. To this day, you still treasure the #show_weapon# and your #show_object#.
+
+d.	 Since that day, you trained your skill with the #show_weapon#.
